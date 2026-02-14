@@ -1,0 +1,49 @@
+/* ===== Global Reset & Base ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Luxury Palette */
+  --beige: #F5F0E8;
+  --beige-light: #FAF7F2;
+  --champagne: #F7E8D0;
+  --champagne-soft: #FDF5EB;
+  --gold: #C9A84C;
+  --gold-light: #D4B85A;
+  --gold-dark: #A8873A;
+  --rose: #D4A0A0;
+  --rose-soft: #E8C4C4;
+  --text-primary: #3D2E2E;
+  --text-secondary: #6B5656;
+  --text-muted: #9A8585;
+  --white: #FFFDF9;
+  --shadow-soft: 0 4px 20px rgba(61, 46, 46, 0.06);
+  --shadow-medium: 0 8px 32px rgba(61, 46, 46, 0.1);
+  --shadow-gold: 0 4px 24px rgba(201, 168, 76, 0.2);
+
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--text-primary);
+  background-color: var(--beige);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, var(--beige-light) 0%, var(--beige) 30%, var(--champagne-soft) 100%);
+}
+
+#root {
+  min-height: 100vh;
+}
